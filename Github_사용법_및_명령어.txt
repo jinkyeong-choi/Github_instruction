@@ -1,0 +1,35 @@
+Github 명령어
+
+Github 가입
+repository 생성
+
+Git 설치
+Git bash 실행
+git config --global user.name "name" -> Github 회원가입 시 입력한 이름
+git config --global user.email "email"
+git config --list ->입력한 내용 잘 들어갔나 확인
+
+
+git init
+- local 폴더에 처음 git 폴더 생성시
+git add .
+- '.'은 해당 폴더의 모든 파일을 읨
+- 특정 파일만 넣고 싶으면 '.' 위치에 파일 이름 적기
+git status
+- 어떤 파일 들어가있는지 확인
+git commit -m "first commit"
+- ""안에는 내가 원하는 코멘트 적으면 됨
+- 그냥 최종본, 진짜최종본, 최최종 이런 느낌임
+git remote add origin git@github.com:이름?/프로젝트이름.git
+- 이거 사이트에서 주소 복사해서 쓰면됨
+- Github이랑 연결고리를 만들어줌
+git remote -v
+- Github이랑 연결고리 확인
+git push origin master  --> 이건 최종 결정권자가 해야함 (신입이 하면 큰일남)
+- 메인 master 브랜치로 코드를 보냄
+git checkout -b jin
+- 해당 프로젝트에 'jin'이라는 이름의 브랜치를 만들어짐(새로 공간을 파준다)
+git push origin jin
+- 'jin' 브랜치에 파일을 보냄
+git pull origin master   --> 지금 작성 중인 코드에 Github의 코드 넣음\
+- 연결된 프로젝트에 있는 master 브랜치의 코드를 가져옴
